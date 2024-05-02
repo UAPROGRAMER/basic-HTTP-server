@@ -27,14 +27,14 @@ def project_1_dw():
 
 @app.route('/about/')
 def about():
+    return render_template('about.html')
+
+#@app.route('/data/')
+#def data():
     return render_template('datamaneger.html')
 
-@app.route('/data/')
-def data():
-    return render_template('datamaneger.html')
-
-@app.route('/data/download')
-def download():
+#@app.route('/data/download')
+#def download():
     path = 'data/test.txt'
     return send_file(path, as_attachment=True)
 
