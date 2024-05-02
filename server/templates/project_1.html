@@ -1,0 +1,28 @@
+<html>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <head></head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>UAPROGRAMER's HTTP server!</h1>
+                <div class="container">
+                    <div class="column">
+                        <b>|</b>
+                        <a class="btn btn-success" href="{{url_for('projects')}}">Projects</a>
+                        <b>|</b>
+                        <a class="btn btn-success" href="{{url_for('about')}}">About</a>
+                        <b>|</b>
+                    </div>
+                </div>
+                <b><br><br>
+                    <h2>
+                    Project 1
+                    </h2>
+                    About:<br>
+                    this is program<br><br>
+                    <a class="btn btn-success" href="{{url_for('project_1_dw')}}">|Download|</a>
+                </b>
+            </div>
+        </div>
+    </body>
+</html>
